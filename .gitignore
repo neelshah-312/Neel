@@ -2,6 +2,7 @@ node_modules
 dist
 .DS_Store
 *.local
+*.mov
 .vite
 .ref_frames
 .ref2_frames
