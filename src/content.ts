@@ -1,3 +1,5 @@
+import { publicAsset } from "./publicAsset";
+
 export const heroRotatingPhrases = [
   "Splunk correlations",
   "ELK discovery searches",
@@ -49,11 +51,11 @@ export const profile = {
   github: "https://github.com/neelshah-312",
   resumeUrl: RESUME_DRIVE_URL,
   capstoneRepo: "https://github.com/neelshah-312/Spring-2026-Graduate-Capstone-Project-CMSI-694-01-",
-  heroImage: "/neel-hero.png",
+  heroImage: publicAsset("neel-hero.png"),
   /** Circular avatar (nav + name-plate peek). */
-  avatarImage: "/neel-avatar.png",
+  avatarImage: publicAsset("neel-avatar.png"),
   /** 2×3 Memoji sticker sheet (full color). Replace `public/memoji-sheet.png` with your export. */
-  memojiSheet: "/memoji-sheet.png",
+  memojiSheet: publicAsset("memoji-sheet.png"),
 } as const;
 
 export const education = {
@@ -121,7 +123,7 @@ export const projects = [
     href: profile.capstoneRepo,
     cardTone: "teal" as const,
     /** Full product preview in phone strip (replace `public/tripwise-hero.png` to update). */
-    phonePreview: "/tripwise-hero.png",
+    phonePreview: publicAsset("tripwise-hero.png"),
   },
   {
     id: "jobTracker",
@@ -134,7 +136,7 @@ export const projects = [
     stack: ["Python", "Streamlit", "SQLite", "OpenAI", "Gmail API", "Google Drive"],
     href: "https://github.com/neelshah-312/Ai-job-tracker",
     cardTone: "rose" as const,
-    phonePreview: "/job-tracker-hero.svg",
+    phonePreview: publicAsset("job-tracker-hero.svg"),
   },
   {
     id: "dashboard",
