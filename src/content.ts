@@ -203,22 +203,22 @@ export const skillGroups = [
 export const aboutChat = [
   {
     q: "Alright, quick intro. Who are you?",
-    a: "I'm Neel — SOC-minded, finishing my M.S. in CS at LMU. I cut my teeth at Aditech Infotech (Ahmedabad) as a Cyber Security Analyst / SecOps engineer—Splunk/ELK tuning, triage, IAM signals, and Python glue before grad school.",
+    a: "I'm Neel — a CS grad student at LMU with a sharp focus on SOC operations. I spent time as a Cyber Security Analyst at Aditech Infotech, where I learned to think in alerts, tune detections, and write Python that actually saves analyst time.",
   },
   {
-    q: "What industries or stacks have you lived in?",
-    a: "IAM-heavy SaaS, Splunk/ELK-heavy SOCs, hybrid cloud and classic enterprise directories—each with its own favorite false positive.",
+    q: "What's your technical comfort zone?",
+    a: "Splunk and ELK for log analysis, Python for automation, IAM signal triage, and SIEM rule engineering. I'm most at home when the data is messy and the answer isn't obvious yet.",
   },
   {
-    q: "What projects get you excited?",
-    a: "The messy ones: noisy telemetry, auth anomalies that almost look normal, and the “this might be nothing” hunt that turns into a tight detection or a clean closure.",
+    q: "What industries or environments have you worked in?",
+    a: "IAM-heavy SaaS, Splunk/ELK SOCs, hybrid cloud, and classic enterprise directories — each one teaching me a new way to misread a false positive.",
   },
   {
-    q: "How do you work with teams?",
-    a: "I'm not just running queries—I'm your teammate on the bridge: clear notes, honest timelines, and playbooks that get shorter every time we close an incident together.",
+    q: "Walk me through how you triage an alert.",
+    a: "Timestamp, source, context. I check for lateral movement early, pivot fast, and decide within three steps whether it's noise or something that needs a ticket and a call.",
   },
   {
-    q: "One thing people should know about you?",
-    a: "I obsess over the little things—the correlation rule that reads cleanly, the handoff note that saves the next shift twenty minutes.",
+    q: "How do you work with teammates?",
+    a: "Clear notes, honest timelines, and playbooks that get shorter every time we close an incident together. I'm on the bridge with you, not just in the ticket queue.",
   },
 ] as const;
