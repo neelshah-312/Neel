@@ -207,7 +207,7 @@ export const aboutChat = [
   },
   {
     q: "What's your technical comfort zone?",
-    a: "Splunk and ELK for log analysis, Python for automation, IAM signal triage, and SIEM rule engineering. I'm most at home when the data is messy and the answer isn't obvious yet.",
+    a: "Splunk and ELK for log analysis, Python for automation, IAM signal triage, and SIEM rule engineering",
   },
   {
     q: "What industries or environments have you worked in?",
@@ -218,7 +218,7 @@ export const aboutChat = [
     a: "Timestamp, source, context. I check for lateral movement early, pivot fast, and decide within three steps whether it's noise or something that needs a ticket and a call.",
   },
   {
-    q: "How do you work with teammates?",
-    a: "Clear notes, honest timelines, and playbooks that get shorter every time we close an incident together. I'm on the bridge with you, not just in the ticket queue.",
+    q: "Biggest SOC pet peeve?",
+    a: "Alert fatigue nobody's fixed in six months. If a rule fires every hour and nobody acts on it, it's not a detection",
   },
 ] as const;
