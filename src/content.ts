@@ -21,7 +21,7 @@ export const marqueeItems = [
 
 /** Google Drive résumé PDF — single source for navbar, labs, name plate. */
 export const RESUME_DRIVE_URL =
-  "https://drive.google.com/file/d/1dw5iDICrNhIWpVaTUiELjwL0DOc-I2ye/view?usp=sharing" as const;
+  "https://drive.google.com/file/d/1A9KQ57w6LtZr-EJn3axdacP_TdzdCswA/view?usp=sharing" as const;
 
 export const labLinks = [
   {
