@@ -112,18 +112,17 @@ export const workExperience = [
 
 export const projects = [
   {
-    id: "capstone",
-    title: "TripWise — Graduate Capstone",
-    shortTitle: "TripWise",
-    subtitle: "CMSI 694 · Full-stack itinerary engine",
+    id: "threatPulse",
+    title: "ThreatPulse — Agentic SOC Correlation",
+    shortTitle: "ThreatPulse",
+    subtitle: "Streamlit · MITRE · evidence-grounded triage",
     readTime: "≈ 3 min read",
     description:
-      "A guided trip planner with a glassmorphic React wizard, Express services, and a planning core that ranks stops by budget tier, time-of-day intent, and travel distance—wired to rich mapping and export flows.",
-    stack: ["React", "Vite", "Express", "Google Places API", "Maps & PDF UX"],
-    href: profile.capstoneRepo,
-    cardTone: "teal" as const,
-    /** Full product preview in phone strip (replace `public/tripwise-hero.png` to update). */
-    phonePreview: publicAsset("tripwise-hero.png"),
+      "A lightweight SOC triage assistant that correlates fragmented auth and network/IDS events into structured incidents—MITRE ATT&CK mapping, severity scoring, evidence-constrained LLM triage, Neo4j graph views, and analyst-ready reports in Streamlit.",
+    stack: ["Python", "Streamlit", "OpenAI", "Neo4j", "MITRE ATT&CK", "pandas"],
+    href: "https://github.com/neelshah-312/ThreatPulse",
+    cardTone: "violet" as const,
+    phonePreview: publicAsset("threatpulse-hero.png"),
   },
   {
     id: "jobTracker",
@@ -139,17 +138,18 @@ export const projects = [
     phonePreview: publicAsset("job-tracker-hero.svg"),
   },
   {
-    id: "threatPulse",
-    title: "ThreatPulse — Agentic SOC Correlation",
-    shortTitle: "ThreatPulse",
-    subtitle: "Streamlit · MITRE · evidence-grounded triage",
+    id: "capstone",
+    title: "TripWise — Graduate Capstone",
+    shortTitle: "TripWise",
+    subtitle: "CMSI 694 · Full-stack itinerary engine",
     readTime: "≈ 3 min read",
     description:
-      "A lightweight SOC triage assistant that correlates fragmented auth and network/IDS events into structured incidents—MITRE ATT&CK mapping, severity scoring, evidence-constrained LLM triage, Neo4j graph views, and analyst-ready reports in Streamlit.",
-    stack: ["Python", "Streamlit", "OpenAI", "Neo4j", "MITRE ATT&CK", "pandas"],
-    href: "https://github.com/neelshah-312/ThreatPulse",
-    cardTone: "violet" as const,
-    phonePreview: publicAsset("threatpulse-hero.png"),
+      "A guided trip planner with a glassmorphic React wizard, Express services, and a planning core that ranks stops by budget tier, time-of-day intent, and travel distance—wired to rich mapping and export flows.",
+    stack: ["React", "Vite", "Express", "Google Places API", "Maps & PDF UX"],
+    href: profile.capstoneRepo,
+    cardTone: "teal" as const,
+    /** Full product preview in phone strip (replace `public/tripwise-hero.png` to update). */
+    phonePreview: publicAsset("tripwise-hero.png"),
   },
 ] as const;
 

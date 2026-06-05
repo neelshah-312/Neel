@@ -34,28 +34,6 @@ function previewImageClass(id: string): string {
   return "h-full w-full object-cover object-[50%_4%]";
 }
 
-function PhoneFrame({ project }: { project: Project }) {
-  const src = "phonePreview" in project ? (project.phonePreview as string) : undefined;
-  if (!src) return null;
-
-  return (
-    <div className="mx-auto w-full max-w-[188px] sm:max-w-[204px]">
-      <div className="rounded-[2.1rem] border border-zinc-700/50 bg-gradient-to-b from-zinc-800/80 to-zinc-900 p-[7px] shadow-phone">
-        <div className="relative aspect-[9/19.2] overflow-hidden rounded-[1.65rem] bg-black ring-1 ring-black/80">
-          <div className="absolute left-1/2 top-2 z-10 h-[5px] w-14 -translate-x-1/2 rounded-full bg-black/85" aria-hidden />
-          <img
-            src={src}
-            alt=""
-            className={previewImageClass(project.id)}
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function BrowserFrame({ project }: { project: Project }) {
   const src = "phonePreview" in project ? (project.phonePreview as string) : undefined;
   if (!src) return null;
@@ -80,7 +58,7 @@ function BrowserFrame({ project }: { project: Project }) {
           {host}
         </div>
       </div>
-      <div className="aspect-[16/10] overflow-hidden bg-[#0b1f2a]">
+      <div className="aspect-[16/10] overflow-hidden bg-zinc-950">
         <img
           src={src}
           alt=""
@@ -93,14 +71,7 @@ function BrowserFrame({ project }: { project: Project }) {
   );
 }
 
-function ProjectPreview({ project }: { project: Project }) {
-  if (project.id === "threatPulse") {
-    return <BrowserFrame project={project} />;
-  }
-  return <PhoneFrame project={project} />;
-}
-
-/** Project showcase — phone frames for app UIs, browser frame for wide dashboards. */
+/** Project showcase — uniform browser frames for all previews. */
 export function PhoneStrip() {
   return (
     <section
@@ -117,7 +88,7 @@ export function PhoneStrip() {
         >
           <h2 className="font-serif text-4xl font-medium italic text-white sm:text-5xl">Selected work</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-zinc-400 sm:text-base">
-            Three builds I ship and talk about — capstone travel, job-search automation, and agentic SOC triage.
+            Agentic SOC triage, job-search automation, and graduate capstone travel — three builds I ship and talk about.
           </p>
         </motion.div>
 
@@ -146,7 +117,7 @@ export function PhoneStrip() {
                 <div className="flex flex-1 flex-col p-5 sm:p-6">
                   <div className="mb-5 flex min-h-[220px] items-center justify-center sm:min-h-[240px]">
                     <div className="w-full transition-transform duration-500 group-hover:scale-[1.02]">
-                      <ProjectPreview project={p} />
+                      <BrowserFrame project={p} />
                     </div>
                   </div>
 
