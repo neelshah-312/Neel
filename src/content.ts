@@ -139,16 +139,17 @@ export const projects = [
     phonePreview: publicAsset("job-tracker-hero.svg"),
   },
   {
-    id: "dashboard",
-    title: "Identity & Telemetry Dashboards",
-    shortTitle: "Telemetry",
-    subtitle: "SOC visibility layer",
-    readTime: "≈ 2 min read",
+    id: "threatPulse",
+    title: "ThreatPulse — Agentic SOC Correlation",
+    shortTitle: "ThreatPulse",
+    subtitle: "Streamlit · MITRE · evidence-grounded triage",
+    readTime: "≈ 3 min read",
     description:
-      "Splunk dashboards for authentication anomalies and suspicious login patterns, enriched with TI feeds, custom alert logic, and MITRE ATT&CK mapping to clarify adversary behavior.",
-    stack: ["Splunk", "MITRE ATT&CK", "Threat Intel", "IAM signals"],
-    href: profile.linkedin,
+      "A lightweight SOC triage assistant that correlates fragmented auth and network/IDS events into structured incidents—MITRE ATT&CK mapping, severity scoring, evidence-constrained LLM triage, Neo4j graph views, and analyst-ready reports in Streamlit.",
+    stack: ["Python", "Streamlit", "OpenAI", "Neo4j", "MITRE ATT&CK", "pandas"],
+    href: "https://github.com/neelshah-312/ThreatPulse",
     cardTone: "violet" as const,
+    phonePreview: publicAsset("threatpulse-hero.png"),
   },
 ] as const;
 
