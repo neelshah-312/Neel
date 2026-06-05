@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import { projects } from "../content";
 
+function previewImageClass(id: string): string {
+  if (id === "threatPulse") {
+    return "h-full w-full object-cover object-top";
+  }
+  return "h-full w-full object-cover object-[50%_2%] sm:object-[50%_0%]";
+}
+
 function PhoneInterior({ id, previewSrc }: { id: string; previewSrc?: string }) {
   if (previewSrc) {
     return (
@@ -8,7 +15,7 @@ function PhoneInterior({ id, previewSrc }: { id: string; previewSrc?: string }) 
         <img
           src={previewSrc}
           alt=""
-          className="h-full w-full object-cover object-[50%_2%] sm:object-[50%_0%]"
+          className={previewImageClass(id)}
           loading="lazy"
           decoding="async"
         />
