@@ -149,7 +149,7 @@ export const projects = [
     stack: ["Python", "Streamlit", "OpenAI", "Neo4j", "MITRE ATT&CK", "pandas"],
     href: "https://github.com/neelshah-312/ThreatPulse",
     cardTone: "violet" as const,
-    phonePreview: publicAsset("threatpulse-hero.svg"),
+    phonePreview: publicAsset("threatpulse-hero.png"),
   },
 ] as const;
 
