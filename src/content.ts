@@ -19,9 +19,8 @@ export const marqueeItems = [
   "LOG FORENSICS",
 ] as const;
 
-/** Google Drive résumé PDF — single source for navbar, labs, name plate. */
-export const RESUME_DRIVE_URL =
-  "https://drive.google.com/file/d/1A9KQ57w6LtZr-EJn3axdacP_TdzdCswA/view?usp=sharing" as const;
+/** Résumé PDF in public/ — single source for navbar, labs, name plate. */
+export const RESUME_URL = publicAsset("Neel_Shah_Security_Analyst_Resume.pdf");
 
 export const labLinks = [
   {
@@ -36,8 +35,8 @@ export const labLinks = [
   },
   {
     label: "Résumé (PDF)",
-    hint: "Google Drive",
-    href: RESUME_DRIVE_URL,
+    hint: "Security Analyst résumé",
+    href: RESUME_URL,
   },
 ] as const;
 
@@ -49,7 +48,7 @@ export const profile = {
   phone: "+1 (669) 261-2450",
   linkedin: "https://www.linkedin.com/in/neel-s-b5112b215/",
   github: "https://github.com/neelshah-312",
-  resumeUrl: RESUME_DRIVE_URL,
+  resumeUrl: RESUME_URL,
   capstoneRepo: "https://github.com/neelshah-312/Spring-2026-Graduate-Capstone-Project-CMSI-694-01-",
   heroImage: publicAsset("neel-hero.png"),
   /** Circular avatar (nav + name-plate peek). */
