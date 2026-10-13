@@ -90,11 +90,11 @@ export const workExperience = [
     summary:
       "Delivered 24/7 SOC monitoring for enterprise and public-sector clients—engineering detections, hunting advanced threats, and tuning EDR so critical incidents were caught faster and contained sooner.",
     highlights: [
-      "Delivered 24/7 SOC monitoring across Splunk Enterprise Security and IBM QRadar SIEM, reducing mean time to detect (MTTD) for critical incidents from 4 hours to 42 minutes and cutting mean time to respond (MTTR) by 2.5 hours per event.",
+      "Delivered 24/7 SOC monitoring services across Splunk Enterprise Security and IBM QRadar SIEM for enterprise and public-sector clients, reducing mean time to detect (MTTD) for critical incidents from 4 hours to 42 minutes and decreasing mean time to respond (MTTR) by 2.5 hours per event.",
       "Engineered 35+ automated detection rules, correlation searches, and SOAR playbooks in Microsoft Sentinel to protect sensitive client data and PII across financial services engagements, eliminating 250 weekly false positive alerts and accelerating high-severity threat containment by 3 hours per incident.",
-      "Hunted advanced persistent threats (APT) by mapping adversary tactics to MITRE ATT&CK TTPs; correlated IOCs across EDR telemetry, firewall logs, and network packet captures to investigate and neutralize 40+ security incidents monthly across KPMG-managed client environments.",
-      "Deployed and tuned CrowdStrike Falcon EDR behavioral detection policies across client enterprise networks, blocking 120 confirmed malware execution events and 15 ransomware pre-deployment attempts over 18 months with zero lateral movement progression.",
-      "Built ML-driven anomaly detection pipelines in Python using scikit-learn (Isolation Forest, clustering) on Splunk-exported log data, flagging 30+ high-risk behavioral anomalies that evaded rule-based SIEM detection and supporting risk advisory deliverables.",
+      "Hunted advanced persistent threats (APT) targeting client infrastructure by mapping adversary tactics to MITRE ATT&CK TTPs; correlated IOCs across EDR telemetry, firewall logs, and network packet captures to investigate and neutralize 40+ security incidents monthly across KPMG-managed client environments.",
+      "Deployed and tuned CrowdStrike Falcon EDR behavioral detection policies across client enterprise networks, blocking 120 confirmed malware execution events and 15 ransomware pre-deployment attempts over 18 months, ensuring zero lateral movement progression and safeguarding client business-critical assets.",
+      "Built ML-driven anomaly detection pipelines in Python using scikit-learn (Isolation Forest, clustering) on Splunk-exported log data to surface insider threats and abnormal access patterns, flagging 30+ high-risk behavioral anomalies that evaded rule-based SIEM detection and supporting risk advisory deliverables.",
     ],
     tools: [
       "Splunk ES",
@@ -203,7 +203,7 @@ export const skillGroups = [
 export const aboutChat = [
   {
     q: "Alright, quick intro. Who are you?",
-    a: "I'm Neel — a CS grad student at LMU with a sharp focus on SOC operations. I spent time as a Cyber Security Analyst at Aditech Infotech, where I learned to think in alerts, tune detections, and write Python that actually saves analyst time.",
+    a: "I'm Neel — a CS grad student at LMU with a sharp focus on SOC operations. I spent time as a Security Analyst at KPMG, where I learned to think in alerts, tune detections, and write Python that actually saves analyst time.",
   },
   {
     q: "What's your technical comfort zone?",
